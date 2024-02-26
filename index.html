@@ -9,14 +9,14 @@
   <meta property="og:description" content="Text watermarking technology aims to tag and identify content produced by large language models (LLMs) to prevent misuse. However, can watermarks survive translation?"/>
   <meta property="og:url" content="https://cross-lingual-watermark.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/Fig3.png" />
+  <meta property="og:image" content="static/image/Fig2.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
   <meta name="twitter:title" content="Can Watermarks Survive Translation? On the Cross-lingual Consistency of Text Watermark for Large Language Models">
   <meta name="twitter:description" content="Text watermarking technology aims to tag and identify content produced by large language models (LLMs) to prevent misuse. However, can watermarks survive translation?">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/image/Fig3.png">
+  <meta name="twitter:image" content="static/image/Fig2.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Text watermark, cross-lingual, consistency, robustness">
@@ -183,16 +183,16 @@
           <div class="Text" style="text-align: left; font-size: medium;">
             <div class="item">
               <!-- Your image here -->
-              <a name="Fig3">
-                <img src="static/images/Fig3.png" alt="CWRA pipeline" style="margin: 0 auto;"/>
+              <a name="Fig2">
+                <img src="static/images/Fig2.png" alt="CWRA pipeline" style="margin: 0 auto;"/>
               </a>
               <h2 class="subtitle has-text-centered" style="font-size: medium;">
-                Fig 3: The pipeline of CWRA. We select Chinese as the pivot language as an example.
+                Fig 2: The pipeline of CWRA. We select Chinese as the pivot language as an example.
               </h2>
             </div>
             <br>
             An attacker that wants to remove the watermark from LLM-generated response typically do not want to change the language of the response.
-            To bridge this gap, we introduce the Cross-lingual Watermark Removal Attack (CWRA), as shown in <a href="#Fig3">Fig 3</a>.
+            To bridge this gap, we introduce the Cross-lingual Watermark Removal Attack (CWRA), as shown in <a href="#Fig2">Fig 2</a>.
             It wraps the query to the LLM in a pivot language, which is then translated back into the original language.
             <br>
             <br>
@@ -200,26 +200,26 @@
             <h3 class="title is-4" style="text-align: left;">Experiment</h3>
             <div class="item">
               <!-- Your image here -->
-              <a name="Fig4">
-                <img src="static/images/Fig4.png" alt="AUC of the watermark strength score under different attack methods."/>
+              <a name="Fig3">
+                <img src="static/images/Fig3.png" alt="AUC of the watermark strength score under different attack methods."/>
               </a>
               <h2 class="subtitle has-text-centered" style="font-size: medium;">
-                Fig 4: ROC curves of the watermark detection under different attack methods.
+                Fig 3: ROC curves of the watermark detection under different attack methods.
               </h2>
             </div>
             <br>
             <div class="item">
               <!-- Your image here -->
-              <a name="Fig5">
-                <img src="static/images/Fig5.png" alt="Text quality"/>
+              <a name="Fig4">
+                <img src="static/images/Fig4.png" alt="Text quality"/>
               </a>
               <h2 class="subtitle has-text-centered" style="font-size: medium;">
-                Fig 5: Text quality under different attack methods.
+                Fig 4: Text quality under different attack methods.
               </h2>
             </div>
             <br>
 
-            <a href="#Fig4">Fig 4</a> and <a href="#Fig4">Fig 5</a> show the detection AUC curves and text quality under different attack methods, respectively.
+            <a href="#Fig3">Fig 3</a> and <a href="#Fig3">Fig 4</a> show the detection AUC curves and text quality under different attack methods, respectively.
             Among all the compared methods, CWRA stands out for its superior performance, as as it achieves the lowest AUC and the highest text quality.
           </div>
         </div>
@@ -237,18 +237,18 @@
             <div class="item">
               <!-- Your image here -->
               <table><tr>
-                <td><a name="Fig7">
-                  <img src="static/images/Fig7.png" alt="AUC of the watermark strength score under different attack methods."/>
+                <td><a name="Fig5">
+                  <img src="static/images/Fig5.png" alt="AUC of the watermark strength score under different attack methods."/>
                 </a>
                 <h2 class="subtitle has-text-centered" style="font-size: medium;">
-                  Fig 7: ROC curves of X-SIR and SIR under CWRA and no attack.
+                  Fig 5: ROC curves of X-SIR and SIR under CWRA and no attack.
                 </h2>
                 </td>
-                <td><a name="Fig8">
-                  <img src="static/images/Fig8.png" alt="Text quality"/>
+                <td><a name="Fig6">
+                  <img src="static/images/Fig6.png" alt="Text quality"/>
                 </a>
                 <h2 class="subtitle has-text-centered" style="font-size: medium;">
-                  Fig 8: Text quality of X-SIR and SIR.
+                  Fig 6: Text quality of X-SIR and SIR.
                 </h2>
                 </td>
               </tr>
@@ -257,7 +257,7 @@
             <br>
 
             We first analyze two key factors essential for achieving cross-lingual consistency (detailed in the <a href="https://arxiv.org/pdf/2402.14007.pdf">paper</a>).
-            By reaching these two factors, our defense method, X-SIR, significantly improves the AUC and text quality under CWRA (<a href="#Fig7">Fig 7</a> and <a href="#Fig8">Fig 8</a>).
+            By reaching these two factors, our defense method, X-SIR, significantly improves the AUC and text quality under CWRA (<a href="#Fig5">Fig 5</a> and <a href="#Fig6">Fig 6</a>).
             However, the defense method still has limitations, and we 
           </div>
         </div>
